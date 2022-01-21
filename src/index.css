@@ -2,7 +2,13 @@
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
+  max-width: 450px;
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -53,6 +59,17 @@ section {
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cards-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cards-list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .card {
